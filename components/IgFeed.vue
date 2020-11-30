@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     async getIgFeed() {
-      const target_url = process.env.API_IG
+      const target_url = "https://graph.facebook.com/v9.0/17841442879731703?fields=name%2Cmedia.limit(9)%7Bmedia_url%2Cthumbnail_url%2Cpermalink%7D&access_token=EAABuWjrSs0MBADpEiXQEAutyl4tvxh1O050K5HfvSKcLR5ZColcCgD1EyULChkYirGjw7fx9AHPEGcga3wSBt7UP8r02rxSxdcTL1vJU0g2KB87y5xfRuwFa9s9QnSWBGvx3N7nTnmJYQdN6IhnPcEuc4AZCAuCvACzHfE8wZBLZCp2n0WxezHzp2BhTcagZD"
       const feed = await this.$axios.$get(target_url)
       this.igFeed = feed.media.data
     }
