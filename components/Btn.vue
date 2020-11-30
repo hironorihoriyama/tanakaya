@@ -44,6 +44,19 @@ export default {
   &-bl a
     background-color: $gray-bg
     &:hover
-      background-color: $white 
+      background-color: $white
+  &.btn-ig
+    width: 180px
+    height: 48px
+    border-radius: 15px
+    padding: 12px 14px
+    background-color: $ig
+    border: none
+    &:hover
+      opacity: .7
+    & a
+      @include wf-gen()
+      color: $white
+      font-size: 20px
 
 </style>

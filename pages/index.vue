@@ -83,6 +83,9 @@
         </div>
       </div>
     </div>
+    <Clm>
+      <IgFeed />
+    </Clm>
     <Footer />
   </div>
 </template>

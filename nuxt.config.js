@@ -1,3 +1,5 @@
+require('dotenv').config();
+const {API_IG} = process.env;
 
 export default {
   /*
@@ -62,8 +64,7 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: ['@nuxtjs/axios'],
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
@@ -76,5 +77,8 @@ export default {
     },
     transpile: [/^vue2-google-maps($|\/)/]
   },
-  loading: '@/components/loading.vue'
+  loading: '@/components/loading.vue',
+  env: {
+    API_IG
+  }
 }

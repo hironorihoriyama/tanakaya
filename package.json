@@ -11,6 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
     "nuxt": "^2.13.0",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1",
