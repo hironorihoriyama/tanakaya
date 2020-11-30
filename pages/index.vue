@@ -47,7 +47,7 @@
       <div class="top_rm_wp">
         <img src="~/assets/img/ttl3.svg" alt="ttl3">
         <div class="top_rm_wp_ss">
-          <Swiper />
+          <Swiper1 />
         </div>
         <div class="top_rm_btn_wp">
           <Btn class="top_rm_btn">
@@ -75,6 +75,14 @@
         </div>
       </div>
     </Clm>
+    <div class="top_ts">
+      <div class="top_ts_wp">
+        <img src="~/assets/img/ttl4.svg" alt="ttl4">
+        <div class="top_ts_wp_ss">
+          <Swiper2 />
+        </div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
@@ -240,4 +248,21 @@ export default {
           color: $key-txt
           font-size: 16px
           margin-top: 23px
+  &_ts
+    display: flex
+    &_wp
+      height: 672px
+      width: 100%
+      background-color: $key-bg
+      position: relative
+      & img
+        position: absolute
+        top: 125px
+        left: 177px
+      &_ss
+        position: absolute
+        top: 125px
+        right: 0
+        width: 75%
+        overflow: hidden
 </style>

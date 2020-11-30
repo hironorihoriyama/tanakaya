@@ -1,8 +1,8 @@
 <template>
   <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-slide_01"></div>
-      <div class="swiper-slide swiper-slide_02"></div>
+      <div class="swiper-slide swiper-slide_2_1"></div>
+      <div class="swiper-slide swiper-slide_2_2"></div>
     </div>
   </div>
 </template>
@@ -43,14 +43,19 @@ export default {
 @import '~assets/scss/_mixin.scss';
 .swiper
   &-container
-    height: 416px
+    height: 450px
     @include mediaQuery-down(sm)
       height: 252px
   &-slide
     background-size: cover
     background-position: center
-    &_01
-      background-image: url('~@/assets/img/ss1.jpg')
-    &_02
-      background-image: url('~@/assets/img/ss2.jpg')
+    &_2
+      &_1
+        background-image: url('~@/assets/img/ss21.png')
+        @include retina
+          background-image: url('~@/assets/img/ss21@2x.png')
+      &_2
+        background-image: url('~@/assets/img/ss22.png')
+        @include retina
+          background-image: url('~@/assets/img/ss22@2x.png')
 </style>
