@@ -237,7 +237,7 @@ export default {
       justify-content: space-between
       width: 70%
       &_wp
-        background-color: #F4ECE1
+        background-color: $sub-bg
         width: 336px
         height: 187px
         padding: 21px 23px 44px 23px
