@@ -1,11 +1,11 @@
 <template>
   <header
     class="mnu"
-    :class="{ 'mnu-gray': gray, 'mnu_cng': scrollY > 81 }"
+    :class="{ 'mnu_cng': scrollY > 81 }"
   >
     <div class="mnu_wp">
       <div class="mnu_ttl">
-        <Logo />
+        <Logo :gray="gray" />
       </div>
       <div class="mnu_btn_wp">
         <a
@@ -24,7 +24,7 @@
         :class="{ active: tgl }"
       >
         <li><nuxt-link to="/about" :class="{ 'mnu-gray': gray }">田中屋について</nuxt-link></li>
-        <li><nuxt-link to="/atelier" :class="{ 'mnu-gray': gray }">お料理</nuxt-link></li>
+        <li><nuxt-link to="/food" :class="{ 'mnu-gray': gray }">お料理</nuxt-link></li>
         <li><a href="http://cc-soluna.com/#top_cmp" :class="{ 'mnu-gray': gray }">お部屋</a></li>
         <li><a href="/" class="mnu_ls_rsv" :class="{ 'mnu-gray': gray }">ご予約</a></li>
         <li><a href="/" :class="{ 'mnu-gray': gray }">日/En</a></li>
@@ -129,6 +129,8 @@ export default {
       padding: 3px 8px
       border: 1px solid $white
       border-radius: 2px
+      &.mnu-gray
+        border-color: $key
     & li
       font-size: 14px
       margin-left: 33px
